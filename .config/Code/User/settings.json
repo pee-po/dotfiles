@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.acceptSuggestionOnEnter": "off",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.linting.mypyEnabled": true,
+    "editor.rulers": [79,119],
+    "search.exclude": {
+        "build/**": true,
+        "doxy/**": true
+    }
+}
