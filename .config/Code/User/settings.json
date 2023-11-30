@@ -9,5 +9,8 @@
     "search.exclude": {
         "build/**": true,
         "doxy/**": true
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
     }
 }

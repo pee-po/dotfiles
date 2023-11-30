@@ -34,6 +34,14 @@ return require('packer').startup(function(use)
         requires = { 'nvim-web-devicons'}
     }
 
+    -- Mason: Portable package manager
+    use({
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup()
+        end,
+    })
+
     -- Treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
@@ -42,13 +50,6 @@ return require('packer').startup(function(use)
         end,
         config = function()
             require("configs.treesitter")
-        end,
-    })
-    -- Mason: Portable package manager
-    use({
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
         end,
     })
 
@@ -64,10 +65,10 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig",
     })
 
-
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
         require('packer').sync()
     end
 end)
+
