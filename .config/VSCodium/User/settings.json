@@ -12,5 +12,6 @@
     },
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    "terminal.integrated.inheritEnv": false
 }
